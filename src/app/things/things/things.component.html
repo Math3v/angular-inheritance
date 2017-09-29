@@ -1,0 +1,6 @@
+<h2>Things Component</h2>
+<ul>
+  <li *ngFor="let thing of things" (click)="handleThingClick(thing)">
+    {{thing.name}}, {{thing.starred | json}}, {{thing.created_at | date}}
+  </li>
+</ul>
